@@ -7,6 +7,7 @@
 @string{rss = {Proc. of Robotics: Science and Systems}}
 @string{iros = {Proc. Intl. Conf. on Intelligent Robots and Systems}}
 @string{iclr = {Proc. Intl. Conf. on Learning Representations}}
+@string{cdc = {Proc. Conf. on Decision and Control}}
 
 This one shows how to add a gif. bibtex_show={true} tells it to add a bibtex button.
 
@@ -95,15 +96,16 @@ Article{einstein1905photoelectriceffect,
   doi={10.48550/arXiv.2412.12156}
 }
 
-@article{Ratheesh25,
+@inproceedings{Ratheesh25,
   title={Operator Splitting Covariance Steering for Safe Stochastic Nonlinear Control},
-  author={Ratheesh, Akash and Pacelli, Vincent and Saravanos, Augustinos D. and Theodorou, Evangelos A.},
-  journal={arXiv preprint arXiv:2411.11211},
+  author={Ratheesh†, Akash and Pacelli†, Vincent and Saravanos, Augustinos D. and Theodorou, Evangelos A.},
   year={2025},
-  arxiv={2411.11211},
+  booktitle={Proc. Conf. on Decision and Control (To Appear)},
+  organization={IEEE},
   bibtex_show={true},
   abstract={Most robotics applications are typically accompanied with safety restrictions that need to be satisfied with a high degree of confidence even in environments under uncertainty. Controlling the state distribution of a system and enforcing such specifications as distribution constraints is a promising approach for meeting such requirements. In this direction, covariance steering (CS) is an increasingly popular stochastic optimal control (SOC) framework for designing safe controllers via explicit constraints on the system covariance. Nevertheless, a major challenge in applying CS methods to systems with the nonlinear dynamics and chance constraints common in robotics is that the approximations needed are conservative and highly sensitive to the point of approximation. This can cause sequential convex programming methods to converge to poor local minima or incorrectly report problems as infeasible due to shifting constraints. This paper presents a novel algorithm for solving chance-constrained nonlinear CS problems that directly addresses this challenge. Specifically, we propose an operator-splitting approach that temporarily separates the main problem into subproblems that can be solved in parallel. The benefit of this relaxation lies in the fact that it does not require all iterates to satisfy all constraints simultaneously prior to convergence, thus enhancing the exploration capabilities of the algorithm for finding better solutions. Simulation results verify the ability of the proposed method to find higher quality solutions under stricter safety constraints than standard methods on a variety of robotic systems. Finally, the applicability of the algorithm on real systems is confirmed through hardware demonstrations.},
-  doi={10.48550/arXiv.2411.11211}
+  doi={10.48550/arXiv.2411.11211},
+  annotation={† Equal Contribution}
 }
 
 @article{Majumdar23,
@@ -206,6 +208,22 @@ talk{Pacelli21,
     arxiv={2002.01428},
     abstract={This paper presents a reinforcement learning approach to synthesizing task-driven control policies for robotic systems equipped with rich sensory modalities (e.g., vision or depth). Standard reinforcement learning algorithms typically produce policies that tightly couple control actions to the entirety of the system's state and rich sensor observations. As a consequence, the resulting policies can often be sensitive to changes in task-irrelevant portions of the state or observations (e.g., changing background colors). In contrast, the approach we present here learns to create a task-driven representation that is used to compute control actions. Formally, this is achieved by deriving a policy gradient-style algorithm that creates an information bottleneck between the states and the task-driven representation; this constrains actions to only depend on task-relevant information. We demonstrate our approach in a thorough set of simulation results on multiple examples including a grasping task that utilizes depth images and a ball-catching task that utilizes RGB images. Comparisons with a standard policy gradient approach demonstrate that the task-driven policies produced by our algorithm are often significantly more robust to sensor noise and task-irrelevant changes in the environment.},
     doi={10.15607/rss.2020.xvi.101}
+}
+
+
+@inproceedings{Pacelli19,
+  title={Task-driven Estimation and Control via Information Bottlenecks},
+  author={Pacelli, Vincent and Majumdar, Anirudha},
+  booktitle=icra,
+  pages={2061--2067},
+  year={2019},
+  organization={IEEE},
+
+  bibtex_show={true},
+  url={https://www.roboticsproceedings.org/rss16/p101.html},
+  arxiv={1809.07874},
+  abstract={Our goal is to develop a principled and general algorithmic framework for task-driven estimation and control for robotic systems. State-of-the-art approaches for controlling robotic systems typically rely heavily on accurately estimating the full state of the robot (e.g., a running robot might estimate joint angles and velocities, torso state, and position relative to a goal). However, full state representations are often excessively rich for the specific task at hand and can lead to significant computational inefficiency and brittleness to errors in state estimation. In contrast, we present an approach that eschews such rich representations and seeks to create task-driven representations. The key technical insight is to leverage the theory of information bottlenecks to formalize the notion of a “task-driven representation” in terms of information theoretic quantities that measure the minimality of a representation. We propose novel iterative algorithms for automatically synthesizing (offline) a task-driven representation (given in terms of a set of task-relevant variables (TRVs)) and a performant control policy that is a function of the TRVs. We present online algorithms for estimating the TRVs in order to apply the control policy. We demonstrate that our approach results in significant robustness to unmodeled measurement uncertainty both theoretically and via thorough simulation experiments including a spring-loaded inverted pendulum running to a goal location.},
+  doi={10.1109/icra.2019.8794213}
 }
 
 @inproceedings{Pacelli18,
