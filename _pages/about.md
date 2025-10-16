@@ -28,7 +28,7 @@ social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  scrollable: false # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
@@ -37,9 +37,13 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a postdoctoral fellow in the *ACDS Lab* at *Georgia Tech*, supervised by *Evangelos Theodorou*. My research focuses on using principles from optimal control theory and statistical mechanics to develop new machine learning algorithms with improved generalization capabilities in domains such as *generative AI* and *imitation learning*.
+I am a postdoctoral fellow in the *ACDS Lab* at *Georgia Tech*, supervised by *Evangelos Theodorou*. Previously, I conducted my Ph.D. research in the *IRoM Lab* at *Princeton University* under *Anirudha Majumdar*.
 
-I received my Ph.D. from *Princeton University* in 2023. I conducted my dissertation research as part of the *IRoM Lab*, where I was advised by *Anirudha Majumdar*. The research I conducted as a graduate student explored the kind and quantity of *sensory information* a robot should use to achieve a task, as well as, the *fundamental limits* of performance afforded by a robot's sensor. Answering these questions theoretically and empirically required designing and analyzing *stochastic optimal control* algorithms using a wide variety of tools, such as *information theory*, *Bayesian inference*, *differential privacy*, and *statistical mechanics*.
+My research focuses on the design and analysis of *task-driven* solutions to stochastic optimal control problems with applications in *robotics* and *generative AI*. I derive algorithms that extract and utilize *task-relevant information* to efficiently create control policies with improved robustness and out-of-distribution generalization. I also provide fundamental theory to rigorously ground my methods using tools from *information theory*, *statistical mechanics*, and *differential privacy*.
+
+<!--My research focuses on using principles from optimal control theory and statistical mechanics to develop new machine learning algorithms with improved generalization capabilities in domains such as *generative AI* and *imitation learning*. -->
+
+<!-- I received my Ph.D. from *Princeton University* in 2023.  I conducted my dissertation research as part of the *IRoM Lab*, where I was advised by *Anirudha Majumdar*. The research I conducted as a graduate student explored the kind and quantity of *sensory information* a robot should use to achieve a task, as well as, the *fundamental limits* of performance afforded by a robot's sensor. Answering these questions theoretically and empirically required designing and analyzing *stochastic optimal control* algorithms using a wide variety of tools, such as *information theory*, *Bayesian inference*, *differential privacy*, and *statistical mechanics*. -->
 
 <!--
 Currently, I am working to  involves quantifying and improving the generalization capabilities of AI models, such as *diffusion models* and *deep unfolded algorithms*, using principles from stochastic optimal control.
