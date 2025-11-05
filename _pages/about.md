@@ -37,7 +37,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a postdoctoral fellow in the *ACDS Lab* at *Georgia Tech*, supervised by *Evangelos Theodorou*. Previously, I conducted my Ph.D. research in the *IRoM Lab* at *Princeton University* under *Anirudha Majumdar*.
+I am a postdoctoral fellow in the ACDS Lab at *Georgia Tech*, supervised by *Evangelos Theodorou*. Previously, I conducted my Ph.D. research in the IRoM Lab at *Princeton University* under *Anirudha Majumdar*.
 
 My research focuses on the design and analysis of *task-driven* solutions to stochastic optimal control problems with applications in *robotics* and *generative AI*. I derive algorithms that extract and utilize *task-relevant information* to efficiently create control policies with improved robustness and out-of-distribution generalization. I also provide fundamental theory to rigorously ground my methods using tools from *information theory*, *statistical mechanics*, and *differential privacy*.
 
