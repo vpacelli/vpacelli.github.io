@@ -46,13 +46,6 @@
             {% if page.permalink == '/' %} {% assign about_title = page.navtitle %} {% endif %}
           {% endfor %}
 
-          <!-- About -->
-          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="/assets/pdf/pacelli_cv.pdf">
-              CV
-            </a>
-          </li>
-
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
               {{- about_title }}
@@ -141,6 +134,13 @@
               </button>
             </li>
           {% endif %}
+
+          <!-- About -->
+          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
+            <a class="nav-link" href="/assets/pdf/pacelli_cv.pdf">
+              cv
+            </a>
+          </li>
         </ul>
       </div>
     </div>
