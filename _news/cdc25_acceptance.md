@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Our paper, "Operator Splitting Covariance Steering for Safe Stochastic Nonlinear Control" was accepted to CDC2025!
