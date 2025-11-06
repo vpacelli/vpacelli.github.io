@@ -203,7 +203,7 @@ exclude:
   - _pages/profiles.md
 
   # Remove CV
-  - _pages/cv.md
+  # - _pages/cv.md
 
 keep_files:
   - CNAME
