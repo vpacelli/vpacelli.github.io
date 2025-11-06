@@ -45,7 +45,7 @@ The research I conducted during my Ph.D. focuses on the design and analysis of t
 
 <!-- My postdoctoral work improves the generalization and scalability of modern deep learning methods by formulating them as SOC problems with embedded task-relevant structures. In particularly, my work considers the *deep unfolding* of optimization solvers and *Schrödinger bridge* diffusion models. Unfolding optimization  -->
 
- on utilizing SOC reformulations  in the structure of modern deep learning architectures. Two applications of interest 
+ <!-- on utilizing SOC reformulations  in the structure of modern deep learning architectures. Two applications of interest  -->
 
 <!-- My research derives algorithms that solve stochastic optimal control (SOC) problems central to *robotics* and *generative AI* in a manner that generalizes beyond the training data set. My methods achieve this goal by creating *task-driven* control policies that only depend on *task-relevant information* contained in the problem data. Filtering out irrelevant information improves the ability of policies to generalize to new environments and contexts by preventing them from  -->
 
