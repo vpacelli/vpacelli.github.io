@@ -35,7 +35,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather.html";
-            },},{id: "news-our-paper-operator-splitting-covariance-steering-for-safe-stochastic-nonlinear-control-was-accepted-to-cdc2025",
+            },},{id: "news-the-two-papers-on-which-i-am-a-coauthor-were-accepted-to-iclr2025-feedback-schrödinger-bridge-matching-oral-and-deep-distributed-optimization-for-large-scale-quadratic-programming-poster",
+          title: 'The two papers on which I am a coauthor were accepted to ICLR2025:...',
+          description: "",
+          section: "News",},{id: "news-our-paper-operator-splitting-covariance-steering-for-safe-stochastic-nonlinear-control-was-accepted-to-cdc2025",
           title: 'Our paper, “Operator Splitting Covariance Steering for Safe Stochastic Nonlinear Control” was accepted...',
           description: "",
           section: "News",},{id: "projects-project-1",
