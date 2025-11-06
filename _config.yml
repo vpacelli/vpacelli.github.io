@@ -203,7 +203,7 @@ exclude:
   - _pages/profiles.md
 
   # Remove Projects
-  - pages/projects
+  - _pages/projects
 
   # Remove CV
   # - _pages/cv.md
