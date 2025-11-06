@@ -1,7 +1,7 @@
 ---
 layout: about
 title: About
-navtitle: about
+navtitle: About
 permalink: /
 subtitle: <em> Website Under Construction! </em>
 
@@ -37,9 +37,20 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a postdoctoral fellow in the ACDS Lab at *Georgia Tech*, supervised by *Evangelos Theodorou*. Previously, I conducted my Ph.D. research in the IRoM Lab at *Princeton University* under *Anirudha Majumdar*.
+I am a postdoctoral fellow in the ACDS Lab at *Georgia Tech*, supervised by *Evangelos Theodorou*. I conducted my Ph.D. research in the IRoM Lab at *Princeton University* under *Anirudha Majumdar*.
 
-My research focuses on the design and analysis of *task-driven* solutions to stochastic optimal control problems with applications in *robotics* and *generative AI*. I derive algorithms that extract and utilize *task-relevant information* to efficiently create control policies with improved robustness and out-of-distribution generalization. I also provide fundamental theory to rigorously ground my methods using tools from *information theory*, *statistical mechanics*, and *differential privacy*.
+My research focuses on the design and analysis of *task-driven* methods for solving stochastic optimal control (SOC) problems with applications in *robotics*, *machine learning*, and *generative AI*. These methods exploit task-relevant information to synthesize control policies with improved generalization to new contexts or environments --- reducing data requirements and providing more reliable intelligent systems.
+
+The research I conducted during my Ph.D. focuses on the design and analysis of task-driven *perception-action cycles* in robotics. Modern robots operating in unstructured environments (e.g., self-driving cars) are equipped with powerful, high-dimensional sensors (e.g., cameras) that capture information well beyond that necessary to accomplish their tasks. Requiring a robot's policy extract only the most salient information from these sensors (e.g., lane markings, nearby vehicles) into a low-dimensional, task-relevant representation prevents it from learning spurious correlations between successful control actions and unimportant environmental information (e.g., billboard ads, distant objects). In new environments not seen during training, these correlations reduce performance and can result in unsafe behavior --- therefore, eliminating them improves the ability of the robot to accomplish tasks safely in new environments.
+
+<!-- My postdoctoral work improves the generalization and scalability of modern deep learning methods by formulating them as SOC problems with embedded task-relevant structures. In particularly, my work considers the *deep unfolding* of optimization solvers and *Schrödinger bridge* diffusion models. Unfolding optimization  -->
+
+ on utilizing SOC reformulations  in the structure of modern deep learning architectures. Two applications of interest 
+
+<!-- My research derives algorithms that solve stochastic optimal control (SOC) problems central to *robotics* and *generative AI* in a manner that generalizes beyond the training data set. My methods achieve this goal by creating *task-driven* control policies that only depend on *task-relevant information* contained in the problem data. Filtering out irrelevant information improves the ability of policies to generalize to new environments and contexts by preventing them from  -->
+
+
+<!-- My research focuses on the design and analysis of *task-driven* solutions to stochastic optimal control problems with applications in *robotics* and *generative AI*. I derive algorithms that extract and utilize *task-relevant information* to efficiently create control policies with improved robustness and out-of-distribution generalization. I also provide fundamental theory to rigorously ground my methods using tools from *information theory*, *statistical mechanics*, and *differential privacy*.-->
 
 <!--My research focuses on using principles from optimal control theory and statistical mechanics to develop new machine learning algorithms with improved generalization capabilities in domains such as *generative AI* and *imitation learning*. -->
 
