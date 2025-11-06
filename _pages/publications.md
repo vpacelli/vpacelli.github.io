@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 description:
 nav: true
-navtitle: publications
+navtitle: Publications
 nav_order: 2
 ---
 
