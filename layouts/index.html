@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+{{/* ---------- Hero / Bio ---------- */}}
+<section class="hero">
+  <div class="hero-photo">
+    {{ with .Params.profile_image }}
+    <img src="{{ . }}" alt="Vincent Pacelli">
+    {{ else }}
+    <div class="photo-placeholder">VP</div>
+    {{ end }}
+  </div>
+  <div class="hero-text">
+    <h1 class="hero-name">{{ .Title }}</h1>
+    <p class="hero-subtitle">{{ .Params.subtitle }}</p>
+    <div class="hero-bio">
+      {{ .Content }}
+    </div>
+    <div class="hero-contact">
+      <span>{{ .Params.email }}</span>
+      {{- range .Params.links }}
+      <a href="{{ .url }}" target="_blank" rel="noopener">{{ .label }}</a>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+{{/* ---------- Research ---------- */}}
+<section class="research">
+  <h2 class="section-heading">Research</h2>
+  <div class="research-cards">
+    {{- range $.Site.Data.research }}
+    <div class="research-card">
+      <h3 class="research-card-title">{{ .title }}</h3>
+      <p class="research-card-desc">{{ .description }}</p>
+      <div class="tag-list">
+        {{- range .tags }}
+        <span class="tag">{{ . }}</span>
+        {{- end }}
+      </div>
+    </div>
+    {{- end }}
+  </div>
+</section>
+
+{{ end }}

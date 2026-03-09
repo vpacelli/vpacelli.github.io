@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.157.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vincent Pacelli</title>
+<meta name="description" content="Personal website of Vincent Pacelli — robotics, optimal control, and machine learning researcher.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+ <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Wittgenstein:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body><nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-name">Vincent Pacelli</a>
+    <div class="nav-links">
+      <a href="/"
+         class="nav-link active"
+         >About</a>
+      <a href="/publications/"
+         class="nav-link"
+         >Publications</a>
+      <a href="/cv/pacelli_cv.pdf"
+         class="nav-link"
+         target="_blank" rel="noopener">CV ↗</a>
+    </div>
+  </div>
+</nav>
+<main class="container">
+
+
+<section class="hero">
+  <div class="hero-photo">
+    
+    <img src="/img/prof_pic.jpg" alt="Vincent Pacelli">
+    
+  </div>
+  <div class="hero-text">
+    <h1 class="hero-name">Vincent Pacelli</h1>
+    <p class="hero-subtitle">Postdoctoral Fellow · Georgia Institute of Technology</p>
+    <div class="hero-bio">
+      <p>I am a postdoctoral fellow in the <a href="https://lab-idar.gatech.edu/">ACDS Lab</a> at Georgia Tech, supervised by Evangelos Theodorou. I received my Ph.D. from Princeton University, where I worked in the <a href="https://irom-lab.princeton.edu/">IRoM Lab</a> with Anirudha Majumdar. Before that, I earned my B.S.E. in Electrical Engineering and M.S.E. in Robotics from the University of Pennsylvania, where my thesis was supervised by Daniel E. Koditschek.</p>
+<p>My research develops principled methods that identify and exploit <span class="highlight">task-relevant</span> structure in the stochastic optimal control</span> and learning problems found in robotics. I use variational principles from fields like <span class="highlight">information theory</span> and <span class="highlight">statistical mechanics</span> to formally characterize what problem structure is relevant to a task&mdash;and then build that characterization into algorithms with <span class="highlight">provable guarantees</span>, both analytically and through data-driven methods. This perspective applies to both <span class="highlight">sensing</span> (i.e., what information should a controller use?) and <span class="highlight">computation</span> (i.e., how should an algorithm be structured for a specific problem class?) It also yields <span class="highlight">fundamental limits</span> on achievable performance: bounds on what any controller can accomplish given a system&rsquo;s dynamics and sensors.</p>
+<p>Recently, I co-wrote a proposal funded under the <span class="highlight">DARPA AIQ program</span> on generalization theory for diffusion models. I also teach an undergraduate <span class="highlight">robotics course</span> (AE4803 RO2) at Georgia Tech.</p>
+
+    </div>
+    <div class="hero-contact">
+      <span></span>
+      <a href="https://scholar.google.com/citations?user=imMz-oYAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+
+<section class="research">
+  <h2 class="section-heading">Research</h2>
+  <div class="research-cards">
+    <div class="research-card">
+      <h3 class="research-card-title">Task-Driven Representations for Robust Control</h3>
+      <p class="research-card-desc">Robots equipped with high-dimensional sensors like cameras receive far more information than any single task requires. I formulate control as an optimization problem with an information bottleneck — a constraint forcing the controller to identify and use only task-relevant variables. I developed both model-based and reinforcement learning algorithms to solve these constrained problems, and showed that the resulting controllers generalize to novel environments where conventional approaches fail. Using connections to differential privacy and statistical physics, I established rigorous guarantees explaining why these controllers are robust: by processing less information, they become provably insensitive to task-irrelevant changes in the environment.
+</p>
+      <div class="tag-list">
+        <span class="tag">Information Bottlenecks</span>
+        <span class="tag">Reinforcement Learning</span>
+        <span class="tag">Robust Control</span>
+      </div>
+    </div>
+    <div class="research-card">
+      <h3 class="research-card-title">Fundamental Limits of Sensor-Based Control</h3>
+      <p class="research-card-desc">Given a robot, its sensors, and a task, is there a limit on the best achievable performance — a bound that holds regardless of the control algorithm, the neural network architecture, or how much computation is available? My work establishes the first such information-theoretic bounds in robotics, using tools from information theory and statistical mechanics. Early results used a generalization of Fano&#39;s inequality to bound achievable reward in terms of task-relevant sensor information. My ongoing work derives tighter bounds via the Gibbs variational principle, which connects stochastic optimal control to free energy in thermodynamics, and introduces a self-consistent refinement that exploits the coupling between a controller&#39;s performance and the information its sensor must provide.
+</p>
+      <div class="tag-list">
+        <span class="tag">Information Theory</span>
+        <span class="tag">Statistical Mechanics</span>
+        <span class="tag">Performance Bounds</span>
+      </div>
+    </div>
+    <div class="research-card">
+      <h3 class="research-card-title">Embedding Task Structure in Algorithms</h3>
+      <p class="research-card-desc">General-purpose optimization and learning algorithms are designed for broad problem classes but cannot exploit patterns unique to a specific task. My postdoctoral work develops methods to embed task-specific structure into algorithms — through problem decomposition, optimal transport formulations, and data-driven parameter learning — to improve efficiency and solution quality. This includes an operator splitting approach to covariance steering that enables real-time safe control on aerial vehicles, a sampling-based MPC algorithm that replaces information-theoretic objectives with entropy-regularized optimal transport to avoid pathological mode-averaging, learned distributed optimization solvers that achieve orders-of-magnitude speedups with certified generalization guarantees, and methods for incorporating task-informative priors into Schrödinger bridge generative models.
+</p>
+      <div class="tag-list">
+        <span class="tag">Optimal Transport</span>
+        <span class="tag">Stochastic Control</span>
+        <span class="tag">Diffusion Models</span>
+        <span class="tag">Deep Unfolding</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main><footer class="footer">
+  &copy; 2026 Vincent Pacelli
+</footer>
+</body>
+</html>

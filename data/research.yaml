@@ -1,0 +1,53 @@
+- title: "Task-Driven Representations for Robust Control"
+  description: >
+    Robots equipped with high-dimensional sensors like cameras receive far more
+    information than any single task requires. I formulate control as an optimization
+    problem with an information bottleneck — a constraint forcing the controller to
+    identify and use only task-relevant variables. I developed both model-based and
+    reinforcement learning algorithms to solve these constrained problems, and showed
+    that the resulting controllers generalize to novel environments where conventional
+    approaches fail. Using connections to differential privacy and statistical physics,
+    I established rigorous guarantees explaining why these controllers are robust: by
+    processing less information, they become provably insensitive to task-irrelevant
+    changes in the environment.
+  tags:
+    - Information Bottlenecks
+    - Reinforcement Learning
+    - Robust Control
+
+- title: "Fundamental Limits of Sensor-Based Control"
+  description: >
+    Given a robot, its sensors, and a task, is there a limit on the best achievable
+    performance — a bound that holds regardless of the control algorithm, the neural
+    network architecture, or how much computation is available? My work establishes
+    the first such information-theoretic bounds in robotics, using tools from
+    information theory and statistical mechanics. Early results used a generalization
+    of Fano's inequality to bound achievable reward in terms of task-relevant sensor
+    information. My ongoing work derives tighter bounds via the Gibbs variational
+    principle, which connects stochastic optimal control to free energy in
+    thermodynamics, and introduces a self-consistent refinement that exploits the
+    coupling between a controller's performance and the information its sensor must
+    provide.
+  tags:
+    - Information Theory
+    - Statistical Mechanics
+    - Performance Bounds
+
+- title: "Embedding Task Structure in Algorithms"
+  description: >
+    General-purpose optimization and learning algorithms are designed for broad problem
+    classes but cannot exploit patterns unique to a specific task. My postdoctoral work
+    develops methods to embed task-specific structure into algorithms — through problem
+    decomposition, optimal transport formulations, and data-driven parameter learning —
+    to improve efficiency and solution quality. This includes an operator splitting
+    approach to covariance steering that enables real-time safe control on aerial
+    vehicles, a sampling-based MPC algorithm that replaces information-theoretic
+    objectives with entropy-regularized optimal transport to avoid pathological
+    mode-averaging, learned distributed optimization solvers that achieve
+    orders-of-magnitude speedups with certified generalization guarantees, and methods
+    for incorporating task-informative priors into Schrödinger bridge generative models.
+  tags:
+    - Optimal Transport
+    - Stochastic Control
+    - Diffusion Models
+    - Deep Unfolding

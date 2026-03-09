@@ -1,0 +1,32 @@
+baseURL: "https://pacel.li/"
+languageCode: "en-us"
+title: "Vincent Pacelli"
+
+# Disable unused built-in features
+disableKinds:
+  - taxonomy
+  - term
+  - RSS
+  - sitemap
+  - robotsTXT
+
+params:
+  description: "Personal website of Vincent Pacelli — robotics, optimal control, and machine learning researcher."
+  author: "Vincent Pacelli"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true  # allows raw HTML in markdown if needed
+
+menu:
+  main:
+    - name: "About"
+      url: "/"
+      weight: 1
+    - name: "Publications"
+      url: "/publications/"
+      weight: 2
+    - name: "CV ↗"
+      url: "/cv/pacelli_cv.pdf"
+      weight: 3

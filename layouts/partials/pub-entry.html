@@ -1,0 +1,29 @@
+{{/* Expects a dict with: title, authors, venue, year, and optional doi, arxiv, note */}}
+<div class="pub-card">
+  <div class="pub-title">{{ .title }}</div>
+  <div class="pub-authors">
+    {{/* Highlight "V. Pacelli" in the author string */}}
+    {{ .authors | replaceRE "V\\. Pacelli" `<span class="pub-me">V. Pacelli</span>` | safeHTML }}
+  </div>
+  <div class="pub-venue">{{ .venue }}</div>
+  <div class="pub-links">
+    {{- with .note }}
+    <span class="pub-badge
+      {{- if eq . "Oral" }} pub-badge--oral
+      {{- else if eq . "Spotlight" }} pub-badge--oral
+      {{- else if eq . "Best Paper" }} pub-badge--oral
+      {{- else if in . "Under Review" }} pub-badge--review
+      {{- else if in . "Submitted" }} pub-badge--review
+      {{- else if in . "In Preparation" }} pub-badge--prep
+      {{- else if eq . "Accepted" }} pub-badge--accepted
+      {{- else if eq . "Preprint" }} pub-badge--prep
+      {{- end }}">{{ . }}</span>
+    {{- end }}
+    {{- with .doi }}
+    <a href="{{ . }}" class="pub-pill" target="_blank" rel="noopener">DOI</a>
+    {{- end }}
+    {{- with .arxiv }}
+    <a href="{{ . }}" class="pub-pill" target="_blank" rel="noopener">arXiv</a>
+    {{- end }}
+  </div>
+</div>

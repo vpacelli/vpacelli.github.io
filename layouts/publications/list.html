@@ -1,0 +1,97 @@
+{{ define "main" }}
+
+<h2 class="page-title">{{ .Title }}</h2>
+<p class="page-subtitle">{{ .Content }}</p>
+
+
+
+
+{{ $pubs := $.Site.Data.publications }}
+
+{{/* ---------- Preprints ---------- */}}
+{{ with $pubs.preprints }}
+<div class="pub-year-group">
+  <div class="pub-year-header">
+    <span class="pub-year">Preprints</span>
+    <div class="pub-year-line"></div>
+  </div>
+  <div class="pub-list">
+    {{- range . }}
+      {{ partial "pub-entry.html" . }}
+    {{- end }}
+  </div>
+</div>
+{{ end }}
+
+{{/* ---------- Conference Publications ---------- */}}
+{{/* Group conferences by year */}}
+{{ $years := slice }}
+{{ range $pubs.conferences }}
+  {{ $y := .year }}
+  {{ if not (in $years $y) }}
+    {{ $years = $years | append $y }}
+  {{ end }}
+{{ end }}
+
+{{ range $year := $years }}
+<div class="pub-year-group">
+  <div class="pub-year-header">
+    <span class="pub-year">{{ $year }}</span>
+    <div class="pub-year-line"></div>
+  </div>
+  <div class="pub-list">
+    {{- range $pubs.conferences }}
+      {{- if eq .year $year }}
+        {{ partial "pub-entry.html" . }}
+      {{- end }}
+    {{- end }}
+  </div>
+</div>
+{{ end }}
+
+{{/* ---------- Journal Articles ---------- */}}
+{{ with $pubs.journals }}
+<div class="pub-year-group">
+  <div class="pub-year-header">
+    <span class="pub-year">Journal Articles</span>
+    <div class="pub-year-line"></div>
+  </div>
+  <div class="pub-list">
+    {{- range . }}
+      {{ partial "pub-entry.html" . }}
+    {{- end }}
+  </div>
+</div>
+{{ end }}
+
+{{/* ---------- Patents ---------- */}}
+{{ with $pubs.patents }}
+<div class="pub-year-group">
+  <div class="pub-year-header">
+    <span class="pub-year">Patent</span>
+    <div class="pub-year-line"></div>
+  </div>
+  <div class="pub-list">
+    {{- range . }}
+      {{ partial "pub-entry.html" . }}
+    {{- end }}
+  </div>
+</div>
+{{ end }}
+
+{{/* ---------- Dissertations ---------- */}}
+{{ with $pubs.dissertations }}
+<div class="pub-year-group">
+  <div class="pub-year-header">
+    <span class="pub-year">Dissertations</span>
+    <div class="pub-year-line"></div>
+  </div>
+  <div class="pub-list">
+    {{- range . }}
+      {{ partial "pub-entry.html" . }}
+    {{- end }}
+  </div>
+</div>
+{{ end }}
+
+{{ end }}
