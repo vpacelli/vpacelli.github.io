@@ -6,7 +6,7 @@
 :root {
   --crimson: #DC143C;
   /* --crimson-dark: #A0102C; */
-  --crimson-dark: #B8112F;
+  --crimson-dark: #DC143C;
   --crimson-light: #F5E6EA;
   --bg: #FAFAF8;
   --text: #1A1A1A;
@@ -186,7 +186,7 @@ img {
 }
 
 .hero-bio {
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: 0.95rem;
   color: var(--text);
   line-height: 1.7;
