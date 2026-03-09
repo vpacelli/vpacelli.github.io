@@ -16,7 +16,15 @@
       {{ .Content }}
     </div>
     <div class="hero-contact">
-      <span>{{ .Params.email }}</span>
+      <span id="contact-email"></span>
+        <script>
+          (function() {
+            var u = "{{ .Params.email_user }}";
+            var d = "{{ .Params.email_domain }}";
+            var el = document.getElementById("contact-email");
+            el.innerHTML = '<a href="mailto:' + u + '@' + d + '">' + u + '@' + d + '</a>';
+          })();
+        </script>
       {{- range .Params.links }}
       <a href="{{ .url }}" target="_blank" rel="noopener">{{ .label }}</a>
       {{- end }}
