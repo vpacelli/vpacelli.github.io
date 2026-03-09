@@ -1,0 +1,12 @@
+name: site
+channels:
+  - conda-forge
+dependencies:
+  - hugo
+  - python=3.12
+  - pip:
+    - PyYAML==6.0.3
+    - latexcodec==3.0.1
+    - pybtex==0.25.1
+
+prefix: "/Users/vpacelli/micromamba/envs/site"
