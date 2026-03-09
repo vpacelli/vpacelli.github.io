@@ -135,11 +135,13 @@ img {
 /* ---------- Home: Hero / Bio ---------- */
 
 .hero {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 40px;
-  align-items: start;
   margin-bottom: 56px;
+  overflow: hidden; /* clearfix for the float */
+}
+
+.hero-photo {
+  float: left;
+  margin: 0 32px 16px 0;
 }
 
 .hero-photo img {
@@ -466,10 +468,10 @@ img {
 /* ---------- Responsive ---------- */
 
 @media (max-width: 640px) {
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 24px;
+  .hero-photo {
+    float: none;
     text-align: center;
+    margin: 0 0 24px 0;
   }
 
   .hero-photo img,
