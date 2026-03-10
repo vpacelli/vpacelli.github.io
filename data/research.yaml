@@ -18,7 +18,7 @@
     - Statistical Mechanics
     - Sensor Design
 
-- title: "Embedding Task Structure in Algorithms"
+- title: "Optimal Transport for Control and Learning?"
   description: |
     Many problems in robotics and machine learning reduce to steering or comparing probability distributions---whether pushing a swarm of trajectory samples toward low-cost regions in model predictive control, shaping a state distribution to satisfy safety constraints, or training a generative model to transform noise into data. *Optimal transport* (OT) is the natural mathematical framework for such problems because, unlike information-theoretic divergences, it accounts for the geometry of the underlying space. 
     
