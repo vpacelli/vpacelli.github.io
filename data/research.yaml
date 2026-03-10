@@ -1,53 +1,30 @@
 - title: "Task-Driven Representations for Robust Control"
-  description: >
-    Robots equipped with high-dimensional sensors like cameras receive far more
-    information than any single task requires. I formulate control as an optimization
-    problem with an information bottleneck — a constraint forcing the controller to
-    identify and use only task-relevant variables. I developed both model-based and
-    reinforcement learning algorithms to solve these constrained problems, and showed
-    that the resulting controllers generalize to novel environments where conventional
-    approaches fail. Using connections to differential privacy and statistical physics,
-    I established rigorous guarantees explaining why these controllers are robust: by
-    processing less information, they become provably insensitive to task-irrelevant
-    changes in the environment.
+  description: |
+    When attempting to catch a ball, an agent can estimate its position and velocity, model environmental factors like wind, and integrate the resulting equations to predict where it will land. Cognitive psychology studies show that humans instead maintain the angle of gaze at a constant value---a strategy that reduces many hard-to-monitor variables into a single quantity whose invariance to them is precisely what makes it robust. 
+    
+    My work develops a principled framework for automatically synthesizing such representations. I formulate control with an *information bottleneck* that compresses the full state into a minimal set of *task-relevant variables* while jointly optimizing a policy over them, and develop algorithms for this problem both in model-based settings and via reinforcement learning from high-dimensional observations such as images. A central theoretical result connects information-constrained control to *differential privacy*: the resulting policies are formally insensitive to perturbation of any individual state variable, yielding an explicit bound on performance degradation that depends only on the cost under perfect state information, the estimation error magnitude, and the information constraint---not on a model of the noise.
   tags:
-    - Information Bottlenecks
-    - Reinforcement Learning
-    - Robust Control
+    - Stochastic Control / Reinforcement Learning
+    - Differential Privacy
+    - Task-Driven Representations
 
 - title: "Fundamental Limits of Sensor-Based Control"
-  description: >
-    Given a robot, its sensors, and a task, is there a limit on the best achievable
-    performance — a bound that holds regardless of the control algorithm, the neural
-    network architecture, or how much computation is available? My work establishes
-    the first such information-theoretic bounds in robotics, using tools from
-    information theory and statistical mechanics. Early results used a generalization
-    of Fano's inequality to bound achievable reward in terms of task-relevant sensor
-    information. My ongoing work derives tighter bounds via the Gibbs variational
-    principle, which connects stochastic optimal control to free energy in
-    thermodynamics, and introduces a self-consistent refinement that exploits the
-    coupling between a controller's performance and the information its sensor must
-    provide.
+  description: |
+    Measurement uncertainty places a *fundamental limit* on the performance any feedback controller can achieve, regardless of its computational sophistication. Characterizing these limits allows engineers to benchmark controllers against what is physically achievable, guide sensor selection, and certify whether a task is feasible with a given sensing modality. My work with Anirudha Majumdar and Zhiting (May) Mei established the first general-purpose bounds of this kind for robotics, using a generalization of *Fano's inequality* applied to a quantity we call the *task-relevant information potential* (TRIP).
+
+    I have since found that these bounds are a special case of the *Gibbs variational principle*---the mathematical foundation of the Second Law of Thermodynamics---which extends them to unbounded costs and continuous control spaces and is never looser. The free energy formulation also reveals a *self-consistency* structure: any controller that achieves low cost must concentrate the state distribution, which limits how much information the sensor can extract, which in turn tightens the bound. Formalizing this feedback loop produces a fixed-point equation whose solution is provably tighter than the naive estimate and computable via bisection. On both analytical and numerical examples, the naive bound becomes vacuous as sensor quality improves, while the self-consistent bound remains informative across all noise levels.
   tags:
-    - Information Theory
+    - Fundamental Limits
     - Statistical Mechanics
-    - Performance Bounds
+    - Sensor Design
 
 - title: "Embedding Task Structure in Algorithms"
-  description: >
-    General-purpose optimization and learning algorithms are designed for broad problem
-    classes but cannot exploit patterns unique to a specific task. My postdoctoral work
-    develops methods to embed task-specific structure into algorithms — through problem
-    decomposition, optimal transport formulations, and data-driven parameter learning —
-    to improve efficiency and solution quality. This includes an operator splitting
-    approach to covariance steering that enables real-time safe control on aerial
-    vehicles, a sampling-based MPC algorithm that replaces information-theoretic
-    objectives with entropy-regularized optimal transport to avoid pathological
-    mode-averaging, learned distributed optimization solvers that achieve
-    orders-of-magnitude speedups with certified generalization guarantees, and methods
-    for incorporating task-informative priors into Schrödinger bridge generative models.
+  description: |
+    Many problems in robotics and machine learning reduce to steering or comparing probability distributions---whether pushing a swarm of trajectory samples toward low-cost regions in model predictive control, shaping a state distribution to satisfy safety constraints, or training a generative model to transform noise into data. *Optimal transport* (OT) is the natural mathematical framework for such problems because, unlike information-theoretic divergences, it accounts for the geometry of the underlying space. 
+    
+    My postdoctoral work both advances the methods used to solve OT problems in multiple contexts across robotics and AI. The clearest example is in sampling-based MPC, where replacing the KL divergence in the control-as-inference formulation with an *entropy-regularized OT objective* which respects the geometry of the robot's task and eliminates pathologies like mode-averaging (when a robot averages two trajectories around an obstacle into one that steers into the obstacle). The same geometric perspective informs my work on *covariance steering*, where an operator splitting scheme decomposes the distribution-steering problem into parallelizable subproblems for real-time safe planning, demonstrated on a VTOL drone. It also underlies my work on *Schrödinger bridge* generative models---themselves entropy-regularized OT problems---where I develop task-informative priors that dramatically accelerate training and a distributionally robust formulation that guards against distribution shift. This line of work led to a DARPA-funded project connecting the stochastic control formulation of diffusion models to *PAC-Bayes generalization* theory.
   tags:
     - Optimal Transport
     - Stochastic Control
     - Diffusion Models
-    - Deep Unfolding
+    - Generative AI

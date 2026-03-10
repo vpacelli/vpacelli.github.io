@@ -39,7 +39,7 @@
     {{- range $.Site.Data.research }}
     <div class="research-card">
       <h3 class="research-card-title">{{ .title }}</h3>
-      <p class="research-card-desc">{{ .description }}</p>
+      <div class="research-card-desc">{{ .description | markdownify }}</div>
       <div class="tag-list">
         {{- range .tags }}
         <span class="tag">{{ . }}</span>
