@@ -239,6 +239,11 @@ img {
   font-weight: 500;
 }
 
+.research-card-desc em {
+  color: var(--crimson);
+  font-style: normal;
+}
+
 /* ---------- Home: Research Cards ---------- */
 
 .section-heading {
@@ -268,7 +273,7 @@ img {
 }
 
 .research-card:hover {
-  box-shadow: 0 2px 12px rgba(220, 20, 60, 0.08);
+  box-shadow: 0 2px 12px rgba(220, 20, 60, 0.2);
 }
 
 .research-card-title {
@@ -302,6 +307,11 @@ img {
   color: var(--crimson-dark);
   letter-spacing: 0.02em;
 }
+
+.research-card-desc p + p {
+  margin-top: 0.75em;
+}
+
 
 /* ---------- Publications Page ---------- */
 
