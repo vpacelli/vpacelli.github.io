@@ -7,8 +7,8 @@ email_domain: "gatech.edu"
 links:
   - label: "Google Scholar"
     url: "https://scholar.google.com/citations?user=imMz-oYAAAAJ"
-  - label: "GitHub"
-    url: "https://github.com/YOUR_USERNAME"
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/vpacelli/"
 ---
 
 I am a postdoctoral fellow in the [ACDS Lab](https://lab-idar.gatech.edu/) at Georgia Tech, supervised by **Evangelos Theodorou**. I received my Ph.D. from Princeton University, where I worked in the [IRoM Lab](https://irom-lab.princeton.edu/) with **Anirudha Majumdar**. Before that, I earned my B.S.E. in Electrical Engineering and M.S.E. in Robotics from the University of Pennsylvania, where my thesis was supervised by **Daniel E. Koditschek**.
