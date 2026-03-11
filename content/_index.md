@@ -7,6 +7,8 @@ email_domain: "gatech.edu"
 links:
   - label: "Google Scholar"
     url: "https://scholar.google.com/citations?user=imMz-oYAAAAJ"
+  - label: "ORCID"
+    url: "https://orcid.org/my-orcid?orcid=0000-0002-3757-7538"
   - label: "LinkedIn"
     url: "https://www.linkedin.com/in/vpacelli/"
 ---
