@@ -410,6 +410,12 @@ img {
 
 .pub-links {
   display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pub-links-row {
+  display: flex;
   align-items: center;
   gap: 6px;
 }
