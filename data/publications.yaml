@@ -18,12 +18,17 @@ conferences:
   authors: A. Ratheesh, V. Pacelli, A. D. Saravanos, E. A. Theodorou
   year: 2025
   type: inproceedings
-  venue: Proceedings of the Conference on Decision and Control
+  doi: https://doi.org/10.1109/cdc57313.2025.11312584
+  arxiv: https://arxiv.org/abs/2411.11211
+  url: https://ieeexplore.ieee.org/document/11312584
+  pages: 3552–3559
+  venue: Proceedings of the Conference on Decision and Control, pp. 3552–3559
 - key: Ratheesh25b
   title: 'MetroSky: High-Fidelity Photorealistic Simulator for Urban Air Mobility Vehicles'
   authors: A. Ratheesh, V. Pacelli, E. A. Theodorou
   year: 2025
   type: inproceedings
+  url: https://arc.aiaa.org/doi/10.2514/6.2025-0932
   venue: SCITECH Forum
 - key: Saravanos25
   title: Deep Distributed Optimization for Large-Scale Quadratic Programming
@@ -32,6 +37,7 @@ conferences:
   type: inproceedings
   doi: https://doi.org/10.48550/arXiv.2412.12156
   arxiv: https://arxiv.org/abs/2412.12156
+  url: https://openreview.net/forum?id=hzuumhfYSO
   venue: Proceedings of the International Conference on Learning Representations
 - key: Theodoropoulos25
   title: Feedback Schrödinger Bridge Matching
@@ -40,6 +46,7 @@ conferences:
   type: inproceedings
   doi: https://doi.org/10.48550/arXiv.2410.14055
   arxiv: https://arxiv.org/abs/2410.14055
+  url: https://openreview.net/forum?id=k3tbMMW8rH
   note: Oral
   venue: Proceedings of the International Conference on Learning Representations
 - key: Majumdar22
@@ -47,6 +54,9 @@ conferences:
   authors: A. Majumdar, V. Pacelli
   year: 2022
   type: inproceedings
+  doi: https://doi.org/10.15607/rss.2022.xviii.036
+  arxiv: https://arxiv.org/abs/2202.00129v2
+  url: https://www.roboticsproceedings.org/rss18/p036.pdf
   venue: 'Proceedings of Robotics: System and Science'
 - key: Pacelli22
   title: Robust Control Under Uncertainty via Bounded Rationality and Differential Privacy
@@ -55,6 +65,7 @@ conferences:
   type: inproceedings
   doi: https://doi.org/10.1109/icra46639.2022.9811557
   arxiv: https://arxiv.org/abs/2109.08262
+  url: https://ieeexplore.ieee.org/document/9811557/
   pages: 3467--3474
   venue: Proceedings of the International Conference on Robotics and Automation, pp. 3467--3474
 - key: Sonar21
@@ -63,6 +74,7 @@ conferences:
   year: 2021
   type: inproceedings
   arxiv: https://arxiv.org/abs/2006.01096
+  url: https://proceedings.mlr.press/v144/sonar21a.html
   pages: 21--33
   venue: Proceedings of the Conference on Learning for Dynamics and Control, pp. 21--33
 - key: Pacelli20
