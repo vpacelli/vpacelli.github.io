@@ -118,7 +118,7 @@ def main():
             dissertations.append(rec)
 
         elif etype == "misc" and fields.get("entrytype") == "patent":
-            rec["venue"] = rec.get("note", "")
+            rec["venue"] = rec.pop("note", "")
             patents.append(rec)
 
         elif etype == "unpublished":
