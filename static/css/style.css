@@ -247,6 +247,7 @@ img {
 .research-card-desc em {
   color: var(--crimson);
   font-style: normal;
+  font-weight: 600;
 }
 
 /* ---------- Home: Research Cards ---------- */
