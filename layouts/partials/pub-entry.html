@@ -18,6 +18,7 @@
       {{- else if eq . "Accepted" }} pub-badge--accepted
       {{- else if eq . "Preprint" }} pub-badge--prep
       {{- end }}">{{ . }}</span>
+    <br/>
     {{- end }}
     {{- with .doi }}
     <a href="{{ . }}" class="pub-pill" target="_blank" rel="noopener">DOI</a>
