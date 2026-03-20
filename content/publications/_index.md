@@ -1,7 +1,7 @@
 ---
 title: "Publications"
 layout: "list"
+subtitle: 'foo'
 type: "publications"
+content: "test"
 ---
-
-Conference papers, journal articles, and dissertations.

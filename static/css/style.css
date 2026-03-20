@@ -395,7 +395,8 @@ img {
 .pub-authors {
   font-family: var(--font-sans);
   font-size: 0.85rem;
-  color: var(--text-muted);
+  /* color: var(--text-muted); */
+  /* color: var(--text); */
   line-height: 1.5;
   margin-bottom: 4px;
 }
@@ -406,11 +407,20 @@ img {
 }
 
 .pub-venue {
-  font-family: var(--font-sans);
-  font-size: 0.84rem;
-  color: var(--text-muted);
-  font-style: italic;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  /* color: var(--text-muted); */
+  /* font-style: italic; */
+  font-weight: 400;
   margin-bottom: 8px;
+}
+
+.pub-group-title {
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--crimson);
+  flex-shrink: 0;
 }
 
 .pub-links {

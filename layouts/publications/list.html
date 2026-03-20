@@ -5,15 +5,14 @@
 
 
 
-
 {{ $pubs := $.Site.Data.publications }}
 
 {{/* ---------- Preprints ---------- */}}
 {{ with $pubs.preprints }}
 <div class="pub-year-group">
   <div class="pub-year-header">
-    <span class="pub-year">Preprints</span>
-    <div class="pub-year-line"></div>
+    <span class="pub-group-title">Preprints</span>
+    <!-- <div class="pub-year-line"></div> -->
   </div>
   <div class="pub-list">
     {{- range . }}
@@ -24,6 +23,28 @@
 {{ end }}
 
 {{/* ---------- Conference Publications ---------- */}}
+{{ with $pubs.conferences }}
+<div class="pub-year-group">
+  <div class="pub-year-header">
+    <span class="pub-group-title">Conference Publications</span>
+    <!-- <div class="pub-year-line"></div> -->
+  </div>
+  <div class="pub-list">
+    {{- range . }}
+      {{ partial "pub-entry.html" . }}
+    {{- end }}
+  </div>
+</div>
+{{ end }}
+
+<!-- <div class="pub-year-group">
+  <div class="pub-year-header">
+    <span class="pub-group-title">Conference Publications</span>
+     <div class="pub-year-line"></div> -->
+  <!-- </div>
+</div> -->
+
+<!-- 
 {{/* Group conferences by year */}}
 {{ $years := slice }}
 {{ range $pubs.conferences }}
@@ -47,14 +68,14 @@
     {{- end }}
   </div>
 </div>
-{{ end }}
+{{ end }} -->
 
 {{/* ---------- Journal Articles ---------- */}}
 {{ with $pubs.journals }}
 <div class="pub-year-group">
   <div class="pub-year-header">
-    <span class="pub-year">Journal Articles</span>
-    <div class="pub-year-line"></div>
+    <span class="pub-group-title">Journal Articles</span>
+    <!-- <div class="pub-year-line"></div> -->
   </div>
   <div class="pub-list">
     {{- range . }}
@@ -68,8 +89,8 @@
 {{ with $pubs.patents }}
 <div class="pub-year-group">
   <div class="pub-year-header">
-    <span class="pub-year">Patent</span>
-    <div class="pub-year-line"></div>
+    <span class="pub-group-title">Patent</span>
+    <!-- <div class="pub-year-line"></div> -->
   </div>
   <div class="pub-list">
     {{- range . }}
@@ -83,8 +104,8 @@
 {{ with $pubs.dissertations }}
 <div class="pub-year-group">
   <div class="pub-year-header">
-    <span class="pub-year">Dissertations</span>
-    <div class="pub-year-line"></div>
+    <span class="pub-group-title">Dissertations</span>
+    <!-- <div class="pub-year-line"></div> -->
   </div>
   <div class="pub-list">
     {{- range . }}

@@ -6,7 +6,7 @@
     {{ .authors | replaceRE "V\\. Pacelli" `<span class="pub-me">V. Pacelli</span>` | safeHTML }}
   </div>
   <div class="pub-venue">
-    {{ .venue }}
+    {{ .venue }}, {{ .year }}.
     {{- with .note }}
     <span class="pub-badge
       {{- if eq . "Oral" }} pub-badge--oral
