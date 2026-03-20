@@ -219,6 +219,10 @@ img {
   color: var(--crimson);
 }
 
+.hero-contact a:hover {
+  opacity: 0.6;
+}
+
 .hero-bio a {
   color: var(--crimson);
   text-decoration: underline;
