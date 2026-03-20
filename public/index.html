@@ -40,7 +40,7 @@
     <h1 class="hero-name">Vincent Pacelli</h1>
     <p class="hero-subtitle">Postdoctoral Fellow · Georgia Institute of Technology</p>
     <div class="hero-bio">
-      <p>I am a postdoctoral fellow in the <a href="https://lab-idar.gatech.edu/">ACDS Lab</a> at Georgia Tech, supervised by Evangelos Theodorou. I received my Ph.D. from Princeton University, where I worked in the <a href="https://irom-lab.princeton.edu/">IRoM Lab</a> with Anirudha Majumdar. Before that, I earned my B.S.E. in Electrical Engineering and M.S.E. in Robotics from the University of Pennsylvania, where my thesis was supervised by Daniel E. Koditschek.</p>
+      <p>I am a postdoctoral fellow in the <a href="https://lab-idar.gatech.edu/">ACDS Lab</a> at Georgia Tech, supervised by <strong>Evangelos Theodorou</strong>. I received my Ph.D. from Princeton University, where I worked in the <a href="https://irom-lab.princeton.edu/">IRoM Lab</a> with <strong>Anirudha Majumdar</strong>. Before that, I earned my B.S.E. in Electrical Engineering and M.S.E. in Robotics from the University of Pennsylvania, where my thesis was supervised by <strong>Daniel E. Koditschek</strong>.</p>
 <p>My research develops principled methods that identify and exploit <span class="highlight">task-relevant</span> structure in the stochastic optimal control</span> and learning problems found in robotics. I use variational principles from fields like <span class="highlight">information theory</span> and <span class="highlight">statistical mechanics</span> to formally characterize what problem structure is relevant to a task&mdash;and then build that characterization into algorithms with <span class="highlight">provable guarantees</span>, both analytically and through data-driven methods. This perspective applies to both <span class="highlight">sensing</span> (i.e., what information should a controller use?) and <span class="highlight">computation</span> (i.e., how should an algorithm be structured for a specific problem class?) It also yields <span class="highlight">fundamental limits</span> on achievable performance: bounds on what any controller can accomplish given a system&rsquo;s dynamics and sensors.</p>
 <p>Recently, I co-wrote a grant proposal on developing a generalization theory for diffusion models, which is actively being funded as part of the <a href="https://www.darpa.mil/research/programs/aiq-artificial-intelligence-quantified">DARPA AIQ Program</a>. I also teach <span class="highlight">AE4803 RO2: Robotics &amp; Autonomy</span>, an undergraduate robotics course, at Georgia Tech.</p>
 
@@ -56,7 +56,8 @@
         })();
       </script>
       <a href="https://scholar.google.com/citations?user=imMz-oYAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-      <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://orcid.org/my-orcid?orcid=0000-0002-3757-7538" target="_blank" rel="noopener">ORCID</a>
+      <a href="https://www.linkedin.com/in/vpacelli/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </section>
@@ -67,33 +68,36 @@
   <div class="research-cards">
     <div class="research-card">
       <h3 class="research-card-title">Task-Driven Representations for Robust Control</h3>
-      <p class="research-card-desc">Robots equipped with high-dimensional sensors like cameras receive far more information than any single task requires. I formulate control as an optimization problem with an information bottleneck — a constraint forcing the controller to identify and use only task-relevant variables. I developed both model-based and reinforcement learning algorithms to solve these constrained problems, and showed that the resulting controllers generalize to novel environments where conventional approaches fail. Using connections to differential privacy and statistical physics, I established rigorous guarantees explaining why these controllers are robust: by processing less information, they become provably insensitive to task-irrelevant changes in the environment.
-</p>
+      <div class="research-card-desc"><p>When attempting to catch a ball, an agent can estimate its position and velocity, model environmental factors like wind, and integrate the resulting equations to predict where it will land. Cognitive psychology studies show that humans instead maintain the angle of gaze at a constant value&mdash;a strategy that reduces many hard-to-monitor variables into a single quantity whose invariance to them is precisely what makes it robust.</p>
+<p>My work develops a principled framework for automatically synthesizing such representations. I formulate control with an <em>information bottleneck</em> that compresses the full state into a minimal set of <em>task-relevant variables</em> while jointly optimizing a policy over them, and develop algorithms for this problem both in model-based settings and via reinforcement learning from high-dimensional observations such as images. A central theoretical result connects information-constrained control to <em>differential privacy</em>: the resulting policies are formally insensitive to perturbation of any individual state variable, yielding an explicit bound on performance degradation that depends only on the cost under perfect state information, the estimation error magnitude, and the information constraint&mdash;not on a model of the noise.</p>
+</div>
       <div class="tag-list">
-        <span class="tag">Information Bottlenecks</span>
-        <span class="tag">Reinforcement Learning</span>
-        <span class="tag">Robust Control</span>
+        <span class="tag">Stochastic Control / Reinforcement Learning</span>
+        <span class="tag">Differential Privacy</span>
+        <span class="tag">Task-Driven Representations</span>
       </div>
     </div>
     <div class="research-card">
       <h3 class="research-card-title">Fundamental Limits of Sensor-Based Control</h3>
-      <p class="research-card-desc">Given a robot, its sensors, and a task, is there a limit on the best achievable performance — a bound that holds regardless of the control algorithm, the neural network architecture, or how much computation is available? My work establishes the first such information-theoretic bounds in robotics, using tools from information theory and statistical mechanics. Early results used a generalization of Fano&#39;s inequality to bound achievable reward in terms of task-relevant sensor information. My ongoing work derives tighter bounds via the Gibbs variational principle, which connects stochastic optimal control to free energy in thermodynamics, and introduces a self-consistent refinement that exploits the coupling between a controller&#39;s performance and the information its sensor must provide.
-</p>
+      <div class="research-card-desc"><p>Measurement uncertainty places a <em>fundamental limit</em> on the performance any feedback controller can achieve, regardless of its computational sophistication. Characterizing these limits allows engineers to benchmark controllers against what is physically achievable, guide sensor selection, and certify whether a task is feasible with a given sensing modality. My work with Anirudha Majumdar and Zhiting Mei established the first general-purpose bounds of this kind for robotics, using a generalization of <em>Fano&rsquo;s inequality</em> applied to a quantity we call the <em>task-relevant information potential</em> (TRIP).</p>
+<p>I have since found that these bounds are a special case of the <em>Gibbs variational principle</em>&mdash;the mathematical foundation of the Second Law of Thermodynamics&mdash;which extends them to unbounded costs and continuous control spaces and is never looser. The free energy formulation also reveals a <em>self-consistency</em> structure: any controller that achieves low cost must concentrate the state distribution, which limits how much information the sensor can extract, which in turn tightens the bound. Formalizing this feedback loop produces a fixed-point equation whose solution is provably tighter than the naive estimate and computable via bisection. On both analytical and numerical examples, the naive bound becomes vacuous as sensor quality improves, while the self-consistent bound remains informative across all noise levels.</p>
+</div>
       <div class="tag-list">
-        <span class="tag">Information Theory</span>
+        <span class="tag">Fundamental Limits</span>
         <span class="tag">Statistical Mechanics</span>
-        <span class="tag">Performance Bounds</span>
+        <span class="tag">Sensor Design</span>
       </div>
     </div>
     <div class="research-card">
-      <h3 class="research-card-title">Embedding Task Structure in Algorithms</h3>
-      <p class="research-card-desc">General-purpose optimization and learning algorithms are designed for broad problem classes but cannot exploit patterns unique to a specific task. My postdoctoral work develops methods to embed task-specific structure into algorithms — through problem decomposition, optimal transport formulations, and data-driven parameter learning — to improve efficiency and solution quality. This includes an operator splitting approach to covariance steering that enables real-time safe control on aerial vehicles, a sampling-based MPC algorithm that replaces information-theoretic objectives with entropy-regularized optimal transport to avoid pathological mode-averaging, learned distributed optimization solvers that achieve orders-of-magnitude speedups with certified generalization guarantees, and methods for incorporating task-informative priors into Schrödinger bridge generative models.
-</p>
+      <h3 class="research-card-title">Optimal Transport for Control and Learning?</h3>
+      <div class="research-card-desc"><p>Many problems in robotics and machine learning reduce to steering or comparing probability distributions&mdash;whether pushing a swarm of trajectory samples toward low-cost regions in model predictive control, shaping a state distribution to satisfy safety constraints, or training a generative model to transform noise into data. <em>Optimal transport</em> (OT) is the natural mathematical framework for such problems because, unlike information-theoretic divergences, it accounts for the geometry of the underlying space.</p>
+<p>My postdoctoral work both advances the methods used to solve OT problems in multiple contexts across robotics and AI. The clearest example is in sampling-based MPC, where replacing the KL divergence in the control-as-inference formulation with an <em>entropy-regularized OT objective</em> which respects the geometry of the robot&rsquo;s task and eliminates pathologies like mode-averaging (when a robot averages two trajectories around an obstacle into one that steers into the obstacle). The same geometric perspective informs my work on <em>covariance steering</em>, where an operator splitting scheme decomposes the distribution-steering problem into parallelizable subproblems for real-time safe planning, demonstrated on a VTOL drone. It also underlies my work on <em>Schrödinger bridge</em> generative models&mdash;themselves entropy-regularized OT problems&mdash;where I develop task-informative priors that dramatically accelerate training and a distributionally robust formulation that guards against distribution shift. This line of work led to a DARPA-funded project connecting the stochastic control formulation of diffusion models to <em>PAC-Bayes generalization theory</em>.</p>
+</div>
       <div class="tag-list">
         <span class="tag">Optimal Transport</span>
         <span class="tag">Stochastic Control</span>
         <span class="tag">Diffusion Models</span>
-        <span class="tag">Deep Unfolding</span>
+        <span class="tag">Generative AI</span>
       </div>
     </div>
   </div>

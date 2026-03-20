@@ -86,6 +86,7 @@ def main():
             "authors": clean_latex(authors_str),
             "year": int(fields.get("year", 0)),
             "sort_name": persons[0].last_names[0] if persons else "",
+            "type": etype,
         }
 
         # Optional fields
@@ -119,6 +120,7 @@ def main():
 
         elif etype == "misc" and fields.get("entrytype") == "patent":
             rec["venue"] = rec.pop("note", "")
+            rec["type"] = "patent"
             patents.append(rec)
 
         elif etype == "unpublished":

@@ -3,28 +3,33 @@ conferences:
   title: Sampling-Based Control via Entropy-Regularized Optimal Transport
   authors: V. Pacelli, A. Ratheesh, E. A. Theodorou
   year: 2026
+  type: inproceedings
   note: Submitted; Under Review
   venue: 'Proceedings of Robotics: System and Science'
 - key: Sul26
   title: Distributionally Robust Schrödinger Bridge
   authors: J. Sul, P. Theodoropoulos, V. Pacelli, J. Choi, E. A. Theodorou
   year: 2026
+  type: inproceedings
   note: Submitted; Under Review
   venue: Proceedings of the International Conference on Machine Learning
 - key: Ratheesh25
   title: Operator Splitting Covariance Steering for Safe Stochastic Nonlinear Control
   authors: A. Ratheesh, V. Pacelli, A. D. Saravanos, E. A. Theodorou
   year: 2025
+  type: inproceedings
   venue: Proceedings of the Conference on Decision and Control
 - key: Ratheesh25b
   title: 'MetroSky: High-Fidelity Photorealistic Simulator for Urban Air Mobility Vehicles'
   authors: A. Ratheesh, V. Pacelli, E. A. Theodorou
   year: 2025
+  type: inproceedings
   venue: SCITECH Forum
 - key: Saravanos25
   title: Deep Distributed Optimization for Large-Scale Quadratic Programming
   authors: A. D. Saravanos, H. Kuperman, A. Oshin, A. T. Abdul, V. Pacelli, E. Theodorou
   year: 2025
+  type: inproceedings
   doi: https://doi.org/10.48550/arXiv.2412.12156
   arxiv: https://arxiv.org/abs/2412.12156
   venue: Proceedings of the International Conference on Learning Representations
@@ -32,6 +37,7 @@ conferences:
   title: Feedback Schrödinger Bridge Matching
   authors: P. Theodoropoulos, N. Komianos, V. Pacelli, G.-H. Liu, E. A. Theodorou
   year: 2025
+  type: inproceedings
   doi: https://doi.org/10.48550/arXiv.2410.14055
   arxiv: https://arxiv.org/abs/2410.14055
   note: Oral
@@ -40,11 +46,13 @@ conferences:
   title: Fundamental Performance Limits for Sensor-Based Robot Control and Policy Learning
   authors: A. Majumdar, V. Pacelli
   year: 2022
+  type: inproceedings
   venue: 'Proceedings of Robotics: System and Science'
 - key: Pacelli22
   title: Robust Control Under Uncertainty via Bounded Rationality and Differential Privacy
   authors: V. Pacelli, A. Majumdar
   year: 2022
+  type: inproceedings
   doi: https://doi.org/10.1109/icra46639.2022.9811557
   arxiv: https://arxiv.org/abs/2109.08262
   pages: 3467--3474
@@ -53,6 +61,7 @@ conferences:
   title: 'Invariant Policy Optimization: Towards Stronger Generalization in Reinforcement Learning'
   authors: A. Sonar, V. Pacelli, A. Majumdar
   year: 2021
+  type: inproceedings
   arxiv: https://arxiv.org/abs/2006.01096
   pages: 21--33
   venue: Proceedings of the Conference on Learning for Dynamics and Control, pp. 21--33
@@ -60,11 +69,13 @@ conferences:
   title: Learning Task-Driven Control Policies via Information Bottlenecks
   authors: V. Pacelli, A. Majumdar
   year: 2020
+  type: inproceedings
   venue: 'Proceedings of Robotics: System and Science'
 - key: Pacelli19
   title: Task-Driven Estimation and Control via Information Bottlenecks
   authors: V. Pacelli, A. Majumdar
   year: 2019
+  type: inproceedings
   doi: https://doi.org/10.1109/ICRA.2019.8793631
   pages: 2061--2067
   venue: Proceedings of the International Conference on Robotics and Automation, pp. 2061--2067
@@ -72,12 +83,14 @@ conferences:
   title: Integration of Local Geometry and Metric Information in Sampling-Based Motion Planning
   authors: V. Pacelli, O. Arslan, D. E. Koditschek
   year: 2018
+  type: inproceedings
   pages: 3061--3068
   venue: Proceedings of the International Conference on Robotics and Automation, pp. 3061--3068
 - key: Arslan17
   title: Sensory Steering for Sampling-Based Motion Planning
   authors: O. Arslan, V. Pacelli, D. E. Koditschek
   year: 2017
+  type: inproceedings
   pages: 3708--3715
   venue: Proceedings of the International Conference on Intelligent Robots and Systems, pp. 3708--3715
 journals:
@@ -85,6 +98,7 @@ journals:
   title: Fundamental Limits for Sensor-Based Control via the Gibbs Variational Principle
   authors: V. Pacelli, E. A. Theodorou
   year: 2026
+  type: article
   arxiv: https://arxiv.org/abs/2603.18454
   note: Submitted; Under Review
   venue: Control Systems Letters
@@ -92,6 +106,7 @@ journals:
   title: Fundamental Limits for Sensor-Based Robot Control
   authors: A. Majumdar, Z. Mei, V. Pacelli
   year: 2023
+  type: article
   doi: https://doi.org/10.1177/02783649231190947
   arxiv: https://arxiv.org/abs/2202.00129
   pages: 1051--1069
@@ -102,16 +117,19 @@ dissertations:
   title: Information-Theoretic Necessary and Sufficient Conditions for the Task-Driven Control of Robots
   authors: V. Pacelli
   year: 2023
+  type: phdthesis
   venue: Ph.D. Dissertation, Princeton University, 2023
 - key: Pacelli17
   title: Joint Exploration of Local Metrics and Geometry in Sampling-Based Planning
   authors: V. Pacelli
   year: 2017
+  type: mastersthesis
   venue: M.S. Thesis, University of Pennsylvania, 2017
 patents:
 - key: Mangharam22
   title: Systems of Stacking Interlocking Blocks
   authors: R. Mangharam, M. E. O'Kelly, V. Pacelli, M. A. Brady
   year: 2022
+  type: patent
   url: https://patents.google.com/patent/US11213747B2
   venue: U.S. Patent 11,213,747

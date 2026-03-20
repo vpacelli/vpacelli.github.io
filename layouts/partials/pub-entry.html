@@ -25,5 +25,8 @@
     {{- with .arxiv }}
     <a href="{{ . }}" class="pub-pill" target="_blank" rel="noopener">arXiv</a>
     {{- end }}
+    {{- with .url }}
+    <a href="{{ . }}" class="pub-pill" target="_blank" rel="noopener">{{ if eq $.type "patent" }}Patent{{ else }}Link{{ end }}</a>
+    {{- end }}
   </div>
 </div>
