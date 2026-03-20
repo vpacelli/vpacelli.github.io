@@ -81,6 +81,13 @@ conferences:
   pages: 3708--3715
   venue: Proceedings of the International Conference on Intelligent Robots and Systems, pp. 3708--3715
 journals:
+- key: Pacelli26b
+  title: Fundamental Limits for Sensor-Based Control via the Gibbs Variational Principle
+  authors: V. Pacelli, E. A. Theodorou
+  year: 2026
+  arxiv: https://arxiv.org/abs/2603.18454
+  note: Submitted; Under Review
+  venue: Control Systems Letters
 - key: Majumdar23
   title: Fundamental Limits for Sensor-Based Robot Control
   authors: A. Majumdar, Z. Mei, V. Pacelli
@@ -89,13 +96,7 @@ journals:
   arxiv: https://arxiv.org/abs/2202.00129
   pages: 1051--1069
   venue: International Journal of Robotics Research, vol. 42, no. 12, pp. 1051--1069
-preprints:
-- key: Pacelli26b
-  title: Fundamental Limits for Sensor-Based Control via the Gibbs Variational Principle
-  authors: V. Pacelli, E. A. Theodorou
-  year: 2026
-  note: In Preparation
-  venue: In Preparation
+preprints: []
 dissertations:
 - key: Pacelli23
   title: Information-Theoretic Necessary and Sufficient Conditions for the Task-Driven Control of Robots
