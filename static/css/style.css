@@ -102,7 +102,7 @@ img {
 
 .nav-name:hover {
   opacity: 1;
-  color: var(--text);
+  color: var(--crimson);
 }
 
 .nav-links {
@@ -123,7 +123,7 @@ img {
 
 .nav-link:hover {
   opacity: 1;
-  color: var(--text);
+  color: var(--crimson);
 }
 
 .nav-link.active {
@@ -410,8 +410,8 @@ img {
 
 .pub-links {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  align-items: center;
+  gap: 6px;
 }
 
 .pub-links-row {
@@ -432,6 +432,7 @@ img {
 }
 
 .pub-venue .pub-badge {
+  font-style: normal;
   margin-left: 6px;
   vertical-align: middle;
 }
