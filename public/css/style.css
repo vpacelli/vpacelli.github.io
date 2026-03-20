@@ -431,6 +431,11 @@ img {
   margin-right: 4px;
 }
 
+.pub-venue .pub-badge {
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
 .pub-badge--oral {
   background: var(--crimson);
   color: #fff;
