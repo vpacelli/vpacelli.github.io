@@ -80,6 +80,7 @@ conferences:
   year: 2019
   type: inproceedings
   doi: https://doi.org/10.1109/ICRA.2019.8793631
+  url: https://ieeexplore.ieee.org/document/8794213
   pages: 2061--2067
   venue: Proceedings of the International Conference on Robotics and Automation, pp. 2061--2067
 - key: Pacelli18
@@ -88,6 +89,7 @@ conferences:
   year: 2018
   type: inproceedings
   doi: https://doi.org/10.1109/ICRA.2018.8460739
+  url: https://ieeexplore.ieee.org/document/8460739
   pages: 3061--3068
   venue: Proceedings of the International Conference on Robotics and Automation, pp. 3061--3068
 - key: Arslan17
@@ -96,6 +98,7 @@ conferences:
   year: 2017
   type: inproceedings
   doi: https://doi.org/10.1109/iros.2017.8206218
+  url: https://ieeexplore.ieee.org/document/8206218
   pages: 3708--3715
   venue: Proceedings of the International Conference on Intelligent Robots and Systems, pp. 3708--3715
 journals:
