@@ -19,4 +19,4 @@ My research develops principled methods that identify and exploit <span class="h
 
 Recently, I co-wrote a grant proposal on developing a generalization theory for diffusion models, which is actively being funded as part of the [DARPA AIQ Program](https://www.darpa.mil/research/programs/aiq-artificial-intelligence-quantified). I also teach <span class="highlight">AE4803 RO2: Robotics &amp; Autonomy</span>, an undergraduate robotics course, at Georgia Tech.
 
-*In April, I will be joining <span class="highlight">Amazon Robotics</span> as an <span class="highlight">Applied Scientist</span>*
+*In April, I will be joining <span class="highlight">Amazon Robotics</span> as an <span class="highlight">Applied Scientist</span>*.
