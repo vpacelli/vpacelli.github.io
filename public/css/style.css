@@ -238,8 +238,7 @@ img {
 
 .highlight {
   color: var(--crimson-dark);
-  /* background: rgba(220, 20, 60, 0.07); */
-  padding: 0px 3px;
+  padding: 0px 0px 0px 3px;
   border-radius: 2px;
   font-weight: 500;
 }
