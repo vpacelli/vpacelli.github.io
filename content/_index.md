@@ -2,8 +2,8 @@
 title: "Vincent Pacelli"
 subtitle: "Postdoctoral Fellow · Georgia Institute of Technology"
 profile_image: "/img/prof_pic.jpg"
-email_user: "vpacelli"
-email_domain: "gatech.edu"
+email_user: "vincent"
+email_domain: "pacel.li"
 links:
   - label: "Google Scholar"
     url: "https://scholar.google.com/citations?user=imMz-oYAAAAJ"
