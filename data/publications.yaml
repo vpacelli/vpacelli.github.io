@@ -132,7 +132,9 @@ journals:
   doi: https://doi.org/10.1177/02783649231190947
   arxiv: https://arxiv.org/abs/2202.00129
   pages: 1051--1069
-  venue: International Journal of Robotics Research, vol. 42, no. 12, pp. 1051--1069
+  vol: 42
+  issue: 12
+  venue: International Journal of Robotics Research
 preprints: []
 dissertations:
 - key: Pacelli23
