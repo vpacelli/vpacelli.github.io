@@ -119,8 +119,10 @@ journals:
   authors: V. Pacelli, E. A. Theodorou
   year: 2026
   type: article
+  doi: https://doi.org/10.1109/LCSYS.2026.3710535
   arxiv: https://arxiv.org/abs/2603.18454
-  note: Submitted; Under Review
+  url: https://ieeexplore.ieee.org/document/11595825
+  note: Accepted
   venue: Control Systems Letters
 - key: Majumdar23
   title: Fundamental Limits for Sensor-Based Robot Control
