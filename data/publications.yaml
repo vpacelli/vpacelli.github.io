@@ -8,7 +8,7 @@ conferences:
   arxiv: https://arxiv.org/abs/2606.25265
   url: https://openreview.net/pdf?id=Pe1qlDnrcO
 - key: Krishna26
-  title: LEMCA: LLM-Guided Synthesis of Efficient Mode-Switching Control Architectures
+  title: "LEMCA: LLM-Guided Synthesis of Efficient Mode-Switching Control Architectures"
   authors: A. Krishna, V. Pacelli, D. Jayaraman
   year: 2026
   type: inproceedings
