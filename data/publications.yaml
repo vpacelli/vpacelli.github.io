@@ -15,10 +15,10 @@ conferences:
   venue: Proceedings of the Conference on Robot Learning
   arxiv: https://arxiv.org/abs/2609.21319
   url: https://lemca-robotics.github.io/
-- key: Sul26
+- key: Sul27
   title: Distributionally Robust Schrödinger Bridge
   authors: J. Sul, P. Theodoropoulos, V. Pacelli, J. Choi, E. A. Theodorou
-  year: 2026
+  year: 2027
   type: inproceedings
   note: Submitted; Under Review
   venue: Proceedings of the International Conference on Learning Representations
